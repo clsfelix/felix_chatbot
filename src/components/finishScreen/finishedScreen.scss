@@ -1,0 +1,44 @@
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: opacity_in 3s;
+
+    .titleScreen {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2rem;
+    }
+
+    img {
+        width: 40%;
+        margin-top: -20vh;
+        margin-bottom: 1rem;
+    }
+    
+    p{
+        font-family: 'Indie Flower', cursive;
+    }
+
+    span {
+        position: absolute;
+        bottom: 3vh;
+        font-size: 12px;
+        text-transform: uppercase;
+        animation-delay: 5s;
+        animation: opacity_in 2s;
+
+    }
+    
+}
+
+
+@keyframes opacity_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

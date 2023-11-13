@@ -1,0 +1,29 @@
+.chatBody {
+    overflow-y: scroll;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */ 
+        height: calc(80dvh - 132px);
+
+    }
+      
+      @supports not (-webkit-touch-callout: none) {
+        /* CSS for other than iOS devices */ 
+        height: calc(75vh - 132px);
+
+    }
+
+
+    @media screen and (min-width:720px) {
+        height: calc(80vh - 116px);
+    }
+}
+
+.growing {
+    transition: all 3s;
+    overflow-y: auto;
+}

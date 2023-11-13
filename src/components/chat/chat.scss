@@ -1,0 +1,11 @@
+.body {
+    width: 100vw;
+    height: fit-content;
+    max-width: 720px;
+    background: #fff;
+
+
+    @media screen and (min-width:720px) {
+        height: 100vh;
+    }
+}

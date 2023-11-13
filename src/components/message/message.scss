@@ -1,0 +1,160 @@
+@import './../../App.scss';
+.question {
+    display: flex;
+    margin-bottom: 2px;
+    flex-direction: column;
+
+    .withAvatar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .withoutAvatar {
+        margin-left: 44px !important;
+    }
+
+    .loading {
+        background: #fff !important;
+    }
+
+    .questionBody {
+
+        width: 75vw !important;
+        height: fit-content;
+        background-color: #F0F0F0;
+        margin-left: 0.5rem;
+        padding: .5rem 1rem;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        max-width: 75%;
+
+        p {
+            font-size: 14px;
+        }
+
+
+    }
+    
+}
+
+
+.answer {
+    float: right;
+    height: fit-content;
+    background: #0085FF;
+    display: flex;
+    margin: 8px 0px 8px auto;
+    padding: .5rem 1rem;
+    max-width: 75%;
+    border-radius: 25px;
+
+    p {
+        font-size: 14px;
+        color: #FFF;
+    }
+    width: fit-content;
+    animation: slinde-in-left 5s;
+    -webkit-animation: slinde-in-left 5s;
+
+}
+
+.rating {
+    background: transparent !important;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10vh;
+    div {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    span {
+        font-size: 50px;
+    }
+    button {
+        width: 40vw;
+        max-width: 200px;
+
+    }
+}
+
+.selectedRate {
+    font-variation-settings:
+    'FILL' 1 !important;
+    color: #232323;
+}
+
+
+@include keyframes(slinde-in-right) {
+    from {
+      transform: translateX(110%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+}
+
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 10px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #232323;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+        

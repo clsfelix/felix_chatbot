@@ -1,0 +1,22 @@
+.prompt {
+    height: 100px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.promptInput {
+    background-color:#F7F7F9 ;
+}
+
+.sendIcon {
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.birthDayInput {
+    width: 100%;
+    height: 40px;
+}
